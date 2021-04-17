@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../fonticons/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="../fonticons/css/font-awesome.min.css"> 
+  <style type="text/css">
+    body{
+      background-image: url(../img/CHARGES.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+  </style>
+</head>
+<body>
+  <h2>KESER DESIGN</h2>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand " href="../index.html"><span class="fa fa-sign-out "style="font-size:40px;color:red"></span></a>  
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../gestionArticle.html"><i class="fa fa-newspaper-o fa-2x" style="color:yellow;"></i> Gestion des articles</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../gestionTiers.html"><i class="fa fa-cog fa-spin fa-2x fa-fw" style="color:orange;"></i> Gestion des tiers</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div class="row">
+    <div class="col-md-3 contenu li">
+      <ul>
+        <li>
+          <a href="../gestionArticle.html">
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fa fa-credit-card-alt fa-2x" style="color: orange;" aria-hidden="true"></i> Gestion de l'approvisionnement</button>
+                <div class="dropdown-content">
+                  <a href="../gestionArticle.html">Faire un achat</a>
+                  <a href="../gestionArticle/Appro/ListeAchat.html">Liste des achats</a>
+                </div>
+            </div>  
+          </a>        
+        </li> 
+        <li>
+          <a href="GAGestionStock.html">
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-sort-numeric-desc fa-2x" style="color: orange;" aria-hidden="true"></i> Gestion du stock</button>
+            </div> 
+          </a>
+        </li> 
+        <li>
+          <a href="GAGestionCaisse.html">
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-money fa-2x" style="color: orange;" aria-hidden="true"></i> Gestion de la caisse</button>
+            </div> 
+          </a>
+        </li>
+        <li>
+          <a href="GAGestionCharges.html">
+            <div class="dropdown">
+            <button class="dropbtn"><i class="fa fa-balance-scale fa-2x" style="color: orange;" aria-hidden="true"></i> Gestion des charges</button>
+              <div class="dropdown-content">
+                  <a href="GAGestionCharges.html">Declarer les charges</a>
+                  <a href="Charges/ListeCharges.html">Liste des charges</a>
+                </div>
+            </div> 
+          </a>
+        </li>    
+      </ul> 
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-8 contenu">
+      <div class="row mt-5">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <form class="GestionApprovisionnement">
+            <label>Référence charge</label>
+            <input type="number" name="" placeholder="Référence produit" class="form-control">
+            <label>Nom de charge</label>
+            <input type="text" name="" placeholder="Nom du produit" class="form-control">
+            <label>Prix</label>
+            <input type="number" name="" placeholder="Prix" class="form-control">
+            <label>Quantité restante</label>
+            <input type="number" name="" placeholder="Quantité restante" class="form-control">
+            <label class="fa fa-calendar"> Date</label>
+            <input type="Date" name="" placeholder="Date" class="form-control mb-5">            
+          </form>
+        </div>  
+        <div class="col-md-4"></div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+          <button class="btn btn-primary mt-2 mb-5 form-control">soumettre</button>
+        </div>
+        <div class="col-md-4"></div>
+        
+      </div>
+    </div>  
+  <div class="footer">
+    <p>By Rath 2021.</p>
+  </div>
+</body>
+</html>
